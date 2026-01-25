@@ -1,0 +1,60 @@
+[
+{
+    "id": 1,
+    "name":"Rajastani-pokoda",
+    "category":"starters",
+    "price":250,
+    "description":"fresh Rajastani-pokoda",
+    "image":"assets/images/Rajastani-pokoda.jpg"
+},
+{
+    "id": 2,
+    "name":"Rajastani-puriya",
+    "category":"main",
+    "price":300,
+    "description":"Fresh Hot Rajastani-puriya",
+    "image":"assets/images/Rajastani-puriya.jpg"
+},
+{
+    "id": 3,
+    "name":"Rajastani-Special-Thali",
+    "category":"main",
+    "price":200,
+    "description":"Rajastani-Special-Thali with Delicious Taste",
+    "image":"assets/images/Rajastani-Special-Thali.jpg"
+},
+{
+    "id": 4,
+    "name":"Rajastani-Thali",
+    "category":"main",
+    "price":250,
+    "description":"Rajastani-Thali with varites",
+    "image":"assets/images/Rajastani-Thali.jpg"
+},
+{
+    "id": 5,
+    "name":"dal-bhati",
+    "category":"starters",
+    "price":550,
+    "description":"dal bhati with taste of rajsthan",
+    "image":"assets/images/dal-bhati.jpg"
+},
+{
+    "id": 6,
+    "name":"papad-sabji",
+    "category":"main",
+    "price":450,
+    "description":"papad-sabji with rich taste",
+    "image":"assets/images/papad-sabji.jpg"
+},
+{
+
+    "id": 7,
+    "name":"mithai",
+    "category":"desserts",
+    "price":150,
+    "description":"varity of mithai",
+    "image":"assets/images/mithai.jpg"
+}
+]
+    

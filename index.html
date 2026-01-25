@@ -18,7 +18,7 @@
         <div class="container nav-container">
 
             <!-- Logo -->
-            <a href="#" class="logo">DB<span>.</span></a>
+            <a href="#" class="logo">AGC<span>.</span></a>
             
             <!-- Navigation links -->
             <ul class="nav-list">
@@ -50,9 +50,9 @@
 
             <div class="hero-content container">
                 <span class="hero-badge">Est. 2026</span>
-                <h1 class="hero-title">Authentic Flavors, <br>Fresh Ingredients</h1>
+                <h1 class="hero-title">Algunde's Golden Crown Restaurant<br></h1>
                 <p class="hero-subtitle">
-                    Experience culinary excellence crafted with passion in the heart of Mumbai.
+                    Pure Veg Restaurant Powered By Algunde's Taste.
                 </p>
 
                 <!-- Hero buttons -->
@@ -64,13 +64,13 @@
         </section>
 
         <!-- ================= ABOUT SECTION ================= -->
-        <section id="about" class="section about">
+        <section id="about" class="section about reveal">
             <div class="container">
                 <div class="about-grid">
 
                     <!-- About image -->
                     <div class="about-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
+                        <img src="https://images.unsplash.com/photo-1676193361626-debc2960b1c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVzdGF1cmFudCUyMHJhamFzdGFufGVufDB8fDB8fHww"
                              alt="Exquisite Dish"
                              class="main-img">
 
@@ -86,10 +86,10 @@
                         <span class="sub-heading">Fine Dining Experience</span>
                         <h2 class="section-title">Our Culinary Journey</h2>
                         <p>
-                            Delicious Bites is dedicated to serving fresh, hygienic, and flavorful dishes made from quality ingredients.
+                            Algunde's Golden Crown is dedicated to serving fresh, hygienic, and flavorful dishes made from quality ingredients.
                         </p>
                         <p>
-                            Located in the heart of Mumbai, we pride ourselves on exceptional service and a warm atmosphere.
+                            Located in the heart of Rajastan, we pride ourselves on exceptional service and a warm atmosphere.
                         </p>
                         <a href="#menu" class="btn-text">
                             Discover our specialties <i class="fas fa-arrow-right"></i>
@@ -99,9 +99,8 @@
                 </div>
             </div>
         </section>
-</main>
 <!-- ================= MENU SECTION ================= -->
-        <section id="menu" class="section-light">
+        <section id="menu" class="section-light reveal">
             <div class="container">
 
                 <!-- Section header -->
@@ -123,9 +122,9 @@
                 <!-- Category filters -->
                 <div class="filter-group">
                     <button class="filter-btn active" data-category="all">All Dishes</button>
-                    <button class="filter-btn" data-category="starter">Starters</button>
+                    <button class="filter-btn" data-category="starters">Starters</button>
                     <button class="filter-btn" data-category="main">Main Course</button>
-                    <button class="filter-btn" data-category="dessert">Desserts</button>
+                    <button class="filter-btn" data-category="desserts">Desserts</button>
                 </div>
 
                 <!-- Menu items container (JS renders here) -->
@@ -133,5 +132,132 @@
 
             </div>
         </section>
+
+    </main>    
+
+        <!-- ================= ORDER MODAL ================= -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content order-modal">
+
+            <!-- Close modal -->
+            <button class="modal-close" id="closeOrder">&times;</button>
+
+            <!-- Selected item details -->
+            <h2 class="order-title" id="orderItemName"></h2>
+            <p class="order-price" id="orderItemPrice"></p>
+
+            <!-- Quantity controls -->
+            <div class="quantity-control">
+                <button class="qty-btn" id="decreaseQty">−</button>
+                <input type="number" id="orderQty" value="1" min="1" />
+                <button class="qty-btn" id="increaseQty">+</button>
+            </div>
+
+            <!-- Add to cart -->
+            <button class="btn primary full-width">Add to Cart</button>
+        </div>
+    </div>
+
+        <!-- =============== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-grid reveal">
+
+            <!-- Brand info -->
+            <div class="footer-brand">
+                <h2 class="logo">AGC<span>.</span></h2>
+                <p>Crafting moments through flavor since 2026.</p>
+
+                <!-- Social icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer links -->
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#about">About Us</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Reservations</a>
+            </div>
+
+            <!-- Contact info -->
+            <div class="footer-contact" id="contact">
+                <h4>Visit Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Nariman Point, Mumbai, India</p>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> hello@Algunde'sGoldenCrown.com</p>
+            </div>
+
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Algunde's Golden Crown. Designed with Excellence.</p>
+            </div>
+        </div>
+    </footer>
+<!-- ================= BOOK TABLE MODAL ================= -->
+        <section>
+            <div class="modal" id="bookTableModal">
+                <div class="modal-content">
+
+                    <!-- Close modal -->
+                    <button class="modal-close" id="closeBookTable">&times;</button>
+
+                    <h2>Book a Table</h2>
+
+                    <!-- Booking form -->
+                    <form class="booking-form">
+                        <input type="text" placeholder="Full Name" required />
+                        <input type="tel" placeholder="Phone Number" required />
+                        <input type="date" required />
+                        <input type="time" required />
+
+                        <select required>
+                            <option value="">Guests</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>4</option>
+                            <option>6+</option>
+                        </select>
+
+                        <button type="submit" class="btn primary">Confirm Booking</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================DESIGNER INTRO MODEL======================== -->
+         <div class="modal" id="designerModal">
+            <div class="modal-content designerModal">
+
+             <!--Close button-->
+             <button class="modal-close" id="closeDesignerModal">&times;</button>
+
+             <!--Designer images-->
+             <img
+                 src="assets/images/Rutuja-Algundi.jpeg"
+                 alt="Website Rutuja-Algundi"
+                 class="designer-img"
+                 />
+
+                 <!--Designer message-->
+                 <h2 class="designer-title">Hello</h2>
+                 <p class="designer-text">
+                    I, <strong>Rutuja Algundi</strong>, proudly designed and 
+                    developed this Websitewith passion, creativity, and clean code.
+                 </p>
+
+            </div>
+         </div>  
+
+    <script type="module" src="js/script.js"></script>
+
 </body>
 </html>
